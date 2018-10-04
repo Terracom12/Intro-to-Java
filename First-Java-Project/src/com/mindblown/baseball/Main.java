@@ -26,7 +26,17 @@ public class Main extends JPanel
 
     private static void createAndShowGUI()
     {
+        JFrame frame = new JFrame("Mind Blown Baseball Team");
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
+        JLabel emptyLabel = new JLabel("");
+        emptyLabel.setPreferredSize(new Dimension(175, 100));
+        frame.getContentPane().add(emptyLabel, BorderLayout.CENTER);
+
+        frame.add(new Main());
+
+        frame.pack();
+        frame.setVisible(true);
     }
 
     public void setUpLabels()
