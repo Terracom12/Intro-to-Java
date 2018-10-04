@@ -1,0 +1,7 @@
+The first thing that you have to do is download the zip file from: http://apache.mirrors.lucidnetworks.net/tomcat/tomcat-7/v7.0.91/bin/apache-tomcat-7.0.91-windows-x64.zip
+
+Then you have to extract the files to C:\tomcat
+
+Then you have to go to your enviornment variables, and create a new one called JAVA_HOME with the value of your jdk directory.
+
+Finally you have to copy your servlet-api.jar (from tomcat/lib) and copy it to #JRE_LOCATION#\lib\ext\
